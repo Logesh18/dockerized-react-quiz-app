@@ -1,5 +1,5 @@
 .body_container, .header_content, .container{
-    width:360px;
+    width:380px;
     justify-content: center;
 }
 .header_content,.container{
@@ -14,12 +14,13 @@
 }
 input{
     text-align: center;
-    width:280px;
+    width:360px;
     height:45px;
     font-size: 18px;
+    margin-top:5px;
 }
 .inner_header_content{
-    width:140px;
+    width:180px;
 }
 #login_button, #signup_button{
     width:100%;
@@ -48,3 +49,14 @@ input{
 .login:hover, .signup:hover {
     background-color:rgb(26, 187, 26);
 }   
+@media only screen and (max-width: 768px) {
+    .body_container, .header_content, .container{
+        width:100%;
+    }
+    .inner_header_content{
+        width:110px;
+    }
+    input{
+        width:220px;
+    }
+}
